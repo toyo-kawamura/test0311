@@ -264,7 +264,7 @@
 
 <div class="header">
   <h1>食欲・空腹感の記録</h1>
-  <p>スライダーを動かして現在の状態を選び<br>最後に「記録を保存する」を押してください</p>
+  <p>設問に対し、現在の状態に最も当てはまる位置に<br>スライダーを動かしてください。<br>最後に「記録を保存する」を押してください。</p>
 </div>
 
 <div class="content">
@@ -286,13 +286,13 @@
         <option value="">― タイミングを選択 ―</option>
         <option value="before_sleep">就寝30分前</option>
         <option value="after_wake">起床直後</option>
-        <option value="meal_0">食事開始 0分</option>
-        <option value="meal_30">食事開始 30分</option>
-        <option value="meal_60">食事開始 60分</option>
-        <option value="meal_90">食事開始 90分</option>
-        <option value="meal_120">食事開始 120分</option>
-        <option value="meal_150">食事開始 150分</option>
-        <option value="meal_180">食事開始 180分</option>
+        <option value="meal_0">食事開始時</option>
+        <option value="meal_30">食事開始から30分</option>
+        <option value="meal_60">食事開始から60分</option>
+        <option value="meal_90">食事開始から90分</option>
+        <option value="meal_120">食事開始から120分</option>
+        <option value="meal_150">食事開始から150分</option>
+        <option value="meal_180">食事開始から180分</option>
       </select>
     </div>
     <p class="timing-required" id="timing-required">※ タイミングを選択してください</p>
@@ -305,7 +305,7 @@
     <input type="range" min="0" max="100" step="0.1" value="50" id="hunger-slider">
     <div class="vas-labels">
       <span>まったく<br>空腹でない</span>
-      <span>かなり<br>空腹である</span>
+      <span>非常に<br>空腹である</span>
     </div>
   </div>
 
@@ -315,7 +315,7 @@
     <input type="range" min="0" max="100" step="0.1" value="50" id="satiety-slider">
     <div class="vas-labels">
       <span>まったく<br>満腹でない</span>
-      <span>かなり<br>満腹である</span>
+      <span>非常に<br>満腹である</span>
     </div>
   </div>
 
@@ -346,7 +346,7 @@
 </div>
 
 <script>
-const GAS_URL = "https://script.google.com/macros/s/AKfycbwyYBWkq6o9mvMJKCPx7VH8YD9I7MAz7IYZQj7oXSheb6KyPU33cW-Zw2VN-jXWKThwtg/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbwOYUphMvMgoeRjGMSYsDSEXLynnhXdvP5U-NHvEXHRT1Rh1XCrjDpDglJFttvir9mKiA/exec";
 
 // スライダー ↔ バッジ連動
 const sliderMap = [
